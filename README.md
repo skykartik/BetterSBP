@@ -36,19 +36,6 @@ Windows SmartScreen may warn because the app is not code-signed: click **More in
 <td><img src="docs/screenshots/lib.jpg"></td>
 </tr></table>
 
-## Controls
-
-| Action | Gamepad | Keyboard |
-|---|---|---|
-| Move | D-pad / stick | Arrow keys |
-| Select / Back | A / B | Enter / Esc |
-| Options / Search | X / Y | O / F |
-| Switch tab | LB / RB | Q / E |
-| Control Center | Guide / Start | F1 / Home |
-| Back to betterSBP after a game | | Ctrl+Alt+D |
-| Screenshot | | F12 |
-| Quit | | Ctrl+Q |
-
 ## Build from source
 
 Needs [Node.js](https://nodejs.org) 20+ on Windows.
