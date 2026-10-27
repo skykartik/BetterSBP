@@ -7,7 +7,6 @@ Games, store, friends, chat, downloads, Wi-Fi and Bluetooth in one fullscreen da
 
 [**Download**](../../releases/latest) · [Features](#features) · [Install](#install) · [Build from source](#build-from-source) · [Controls](#controls) · [FAQ](#faq)
 
-![Home](docs/screenshots/home.jpg)
 
 <sub>Screenshots use demo data.</sub>
 </div>
@@ -65,17 +64,6 @@ npm run dist       # build installer + portable exe into ./release
 ```
 
 Or double-click **build.bat**.
-
-### Publishing a release
-
-Push a version tag; GitHub Actions builds the installer and attaches it to a Release using `RELEASE_NOTES.md`:
-
-```bash
-git tag v0.8.8
-git push origin v0.8.8
-```
-
-Edit `RELEASE_NOTES.md` before tagging. The workflow is in `.github/workflows/release.yml`.
 
 ## FAQ
 
