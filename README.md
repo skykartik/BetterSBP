@@ -7,7 +7,6 @@ Games, store, friends, chat, downloads, Wi-Fi and Bluetooth in one fullscreen da
 
 [**Download**](../../releases/latest) · [Features](#features) · [Install](#install) · [Build from source](#build-from-source) · [Controls](#controls) · [FAQ](#faq)
 
-
 > Fan project. Not affiliated with or endorsed by Valve, Sony, Microsoft or Discord. Their names and logos belong to their owners.
 
 ## Install
