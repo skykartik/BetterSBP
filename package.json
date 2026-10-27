@@ -1,0 +1,80 @@
+{
+  "name": "better-sbp",
+  "version": "0.8.8",
+  "description": "betterSBP - a console-style, controller-first Steam Big Picture replacement for Windows",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "dist": "electron-builder --win --publish never"
+  },
+  "devDependencies": {
+    "electron": "github:castlabs/electron-releases#v37.10.3+wvcus",
+    "electron-builder": "^25.1.8"
+  },
+  "dependencies": {
+    "steam-user": "^5.0.0",
+    "steam-session": "^1.9.0",
+    "qrcode": "^1.5.4",
+    "ws": "^8.18.0"
+  },
+  "productName": "betterSBP",
+  "author": "betterSBP",
+  "license": "MIT",
+  "build": {
+    "appId": "com.bettersbp.app",
+    "productName": "betterSBP",
+    "copyright": "betterSBP",
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "electronDist": "node_modules/electron/dist",
+    "electronVersion": "37.10.3",
+    "files": [
+      "main.js",
+      "preload.js",
+      "chat.js",
+      "discord.js",
+      "downloads.js",
+      "guide.js",
+      "netctl.js",
+      "steam.js",
+      "xbox.js",
+      "renderer/**/*",
+      "build/icon.png",
+      "package.json"
+    ],
+    "asar": true,
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico",
+      "artifactName": "betterSBP-${version}-${arch}-${target}.${ext}"
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "runAfterFinish": true,
+      "deleteAppDataOnUninstall": false,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "artifactName": "betterSBP-Setup-${version}.${ext}"
+    },
+    "portable": {
+      "artifactName": "betterSBP-Portable-${version}.${ext}"
+    }
+  }
+}
